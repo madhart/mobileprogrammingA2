@@ -1,0 +1,14 @@
+[
+  {"mealName":  "Lasagna", "ingredients" : ["Ground beef", "Ricotta", "Parmesan", "Lasagna noodles", "Garlic", "Marinara"],
+    "RecipeSteps": ["Cook garlic and ground beef in skillet", "Cook lasagna noodles according to package",
+      "layer sauce and cheese mixture in between noodles", "bake for 45 minutes at 400 "],
+    "mealPhoto": "L1"},
+  {"mealName":  "Baked Oatmeal", "ingredients" : ["Oats", "Milk", "Chocolate Chips", "2 eggs", "Baking soda", "Honey"],
+    "RecipeSteps": ["Cook oats according to package", "Combine wet ingredients, fold in dry ingredients",
+      "Pour mixture into greased baking dish and top with more chocolate chips", "bake for 20 minutes at 375"],
+    "mealPhoto": "O1"},
+  {"mealName":  "Slow Cooker Chili", "ingredients" : ["Ground beef", "Black beans", "Diced tomatoes", "Bell peppers", "Chili powder", "Chicken broth"],
+    "RecipeSteps": ["Cook ground beef until browned", "Chop bell peppers",
+      "dump all ingredients into slow cooker", "Cook on high for 4 hours or low for 8"],
+    "mealPhoto": "C1"}
+]
