@@ -1,18 +1,8 @@
 import { Text, View, Image, Button, Pressable } from "react-native";
-import { useState } from "react";
-import Recipe from "../components/Recipe.jsx"
+import { useRouter } from 'expo-router';
 
-const L1 = require("../assets/images/lasagna.jpg");
-const O1 = require("../assets/images/bakedOatmeal.jpg")
-const C1 = require("../assets/images/chili.jpg")
-import recipeData from "../assets/recipes.json";
-
-const images = { "L1" : L1, "O1" : O1, "C1" : C1}
-
-console.log(recipeData);
 export default function Index() {
-
-  const [recipeIndex, setRecipeIndex] = useState(0);
+const router = useRouter();
   return (
     <View
       style={{
@@ -21,8 +11,8 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-     <Recipe recipeData= {recipeData} recipeIndex= {recipeIndex} images={images} />
-     <Button title= "Next Recipe" onPress ={ () => setRecipeIndex( (recipeIndex + 1) % recipeData.length)}/>
-    </View>
+        <Text>Edit Madison's recipe blog</Text>
+        <Button onPress={() => router.navigate('/recipes')}title="Recipe display"></Button>
+        </View>
   );
 }
